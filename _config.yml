@@ -1,0 +1,142 @@
+# Hexo Configuration
+## Docs: https://hexo.io/docs/configuration.html
+## Source: https://github.com/hexojs/hexo/
+
+# Site
+title: Leoif's Blog
+subtitle:
+description:
+author: Leoif
+language: zh-Hans
+timezone: Asia/Shanghai
+avatar: /img/avatar.png
+
+# URL
+## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
+url: http://leoif.io
+root: /
+permalink: :year/:month/:day/:title/
+permalink_defaults:
+
+# Directory
+source_dir: source
+public_dir: public
+tag_dir: tags
+archive_dir: archives
+category_dir: categories
+code_dir: downloads/code
+i18n_dir: :lang
+skip_render:
+
+# Writing
+new_post_name: :title.md # File name of new posts
+default_layout: post
+titlecase: false # Transform title into titlecase
+external_link: true # Open external links in new tab
+filename_case: 0
+render_drafts: false
+post_asset_folder: false
+relative_link: false
+future: true
+highlight:
+  enable: true
+  line_number: true
+  auto_detect: false
+  tab_replace:
+highlight_theme: night
+
+# Category & Tag
+default_category: uncategorized
+category_map:
+  编程: programming
+  生活: life
+  游戏: game
+  其他: other
+tag_map:
+  编程: programming
+  生活: life
+  游戏: game
+  闲记: casual
+
+# Date / Time format
+## Hexo uses Moment.js to parse and display date
+## You can customize the date format as defined in
+## http://momentjs.com/docs/#/displaying/format/
+date_format: YYYY-MM-DD
+time_format: HH:mm:ss
+
+# Pagination
+## Set per_page to 0 to disable pagination
+per_page: 10
+pagination_dir: page
+
+# Extensions
+## Plugins: https://hexo.io/plugins/
+## Themes: https://hexo.io/themes/
+theme: next
+
+# Deployment
+## Docs: https://hexo.io/docs/deployment.html
+deploy:
+  type: rsync
+  host: 104.238.149.168
+  user: root
+  root: /home/leoif/
+  port: 22
+  delete: true
+  verbose: true
+  ignore_errors: false
+
+
+
+# Social links
+social:
+  GitHub: https://github.com/LYF1999
+
+
+# title
+links_title: 友情链接
+links:
+  东华大学技术宅协会: http://www.dhu-gadu.com/
+  PureWhite: https://purewhite.io
+
+menu:
+  home: /
+  archives: /archives
+  #about: /about
+  categories: /categories
+  tags: /tags
+  #commonweal: /404.html
+
+
+font:
+  enable: true
+
+  # 外链字体库地址，例如 //fonts.googleapis.com (默认值)
+  host:
+
+  # 全局字体，应用在 body 元素上
+  global:
+    external: true
+    family: Monda
+
+  # 标题字体 (h1, h2, h3, h4, h5, h6)
+  headings:
+    external: true
+    family: Roboto Slab
+
+  # 文章字体
+  posts:
+    external: true
+    family:
+
+  # Logo 字体
+  logo:
+    external: true
+    family: Lobster Two
+    size: 24
+
+  # 代码字体，应用于 code 以及代码块
+  codes:
+    external: true
+    family: PT Mono
