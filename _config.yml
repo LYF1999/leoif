@@ -88,18 +88,6 @@ deploy:
   ignore_errors: false
 
 
-
-# Social links
-social:
-  GitHub: https://github.com/LYF1999
-
-
-# title
-links_title: 友情链接
-links:
-  东华大学技术宅协会: http://www.dhu-gadu.com/
-  PureWhite: https://purewhite.io
-
 menu:
   home: /
   archives: /archives
@@ -109,34 +97,10 @@ menu:
   #commonweal: /404.html
 
 
-font:
-  enable: true
-
-  # 外链字体库地址，例如 //fonts.googleapis.com (默认值)
-  host:
-
-  # 全局字体，应用在 body 元素上
-  global:
-    external: true
-    family: Monda
-
-  # 标题字体 (h1, h2, h3, h4, h5, h6)
-  headings:
-    external: true
-    family: Roboto Slab
-
-  # 文章字体
-  posts:
-    external: true
-    family:
-
-  # Logo 字体
-  logo:
-    external: true
-    family: Lobster Two
-    size: 24
-
-  # 代码字体，应用于 code 以及代码块
-  codes:
-    external: true
-    family: PT Mono
+plugin:
+- hexo-generator-feed
+#Feed Atom
+feed:
+type: atom
+path: atom.xml
+limit: 20
